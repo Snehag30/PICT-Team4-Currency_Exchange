@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+/* css for header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgb(18, 18, 114);
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+header .logo {
+    font-size: 35px;
+    text-decoration: none;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: white;
+    font-weight: bolder;
+}
+
+header .logo span {
+    color: rgb(186, 9, 9);
+}
+
+.navbar {
+    overflow: hidden;
+}
+
+header .navbar a {
+    float: left;
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    padding: 0 1.7rem;
+    text-decoration: none;
+    margin-top: 10px;
+    padding-right: 1px;
+    color: rgb(83, 83, 83);
+    color: white;
+}
+
+header .navbar a:hover {
+    color: rgb(161, 161, 185);
+}
+
+/* header #toggler {
+    display: none;
+} */
+
+.navbar .icon {
+    display: none;
+}
+
+header .fa-bars {
+    font-size: 3rem;
+    color: #333;
+    color: white;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: .1rem solid rgba(0, 0, 0, .3);
+    display: none;
+}
+
+/* css for footer */
+.footer .credit {
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 2.5rem;
+    font-size: 1.4rem;
+    color: #333;
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+    padding-bottom: 9rem;
+}
+
+.footer .credit span {
+    color: rgb(18, 18, 114);
+}
+
+/* css for table */
+#root {
+    margin: 10px 70px 70px;
+    margin-top: 200px;
+    box-shadow: 0px 35px 50px rgba(0, 0, 0, 0.2);
+}
+
+#mytable {
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+}
+
+#mytable td,
+#mytable th {
+    text-align: center;
+    padding: 8px;
+    margin-top: 10px;
+}
+
+#mytable td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 12px;
+}
+
+#mytable thead th {
+    color: #ffffff;
+    background: rgb(18, 18, 114);
+}
+
+#mytable thead th:nth-child(odd) {
+    color: #ffffff;
+    background: rgb(18, 18, 114);
+}
+
+#mytable tr:nth-child(even) {
+    background: #F8F8F8;
+}
+
+.aboveTableHead {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin: 35px auto 20px;
+    margin-top: 150px;
+    font-size: 28px;
+    padding-bottom: 0%;
+    text-align: center;
+    color: rgb(18, 18, 114);
+}
+
+/* css for about us */
+#about {
+    text-align: center;
+}
+#about .content h3 {
+    color: rgb(18, 18, 114);
+    font-size: 22px;
+    padding: 5px;
+}
+#about .content p {
+    font-size: 14px;
+}
+.heading {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    margin-left: 500px;
+    padding: 5px;
+    margin: 2rem 0;
+    background: rgb(18, 18, 114);
+}
+
+/* media queries  */
+@media (max-width:600px) {
+    .about {
+        background-position: center;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .navbar a:not(:first-child) {
+        display: none;
+    }
+    
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+
+    .navbar.responsive {
+        position: relative;
+    }
+    
+    .navbar.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+}
